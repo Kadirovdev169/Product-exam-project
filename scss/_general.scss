@@ -5,24 +5,28 @@
 }
 
 body {
-  margin: 0; 
-  padding: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  background-color: #fff;
+  @include basic-area;
+  @include flex;
+  margin-top: 80px;
   height: 100vh;
-
-  display: flex;
   flex-direction: column;
 }
 
 main {
-  background-color: #ccc;
   flex-grow: 1;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline-block;
+}
+
 img {
+  display: inline-block;
   max-width: 100%;
   height: auto;
 }

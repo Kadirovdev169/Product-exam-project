@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header__container {
+  @include flex;
+  padding: 19px 20px;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-bottom: -5px;
+}
+
+.header__title {
+  @include basic-area;
+  margin: 4px 0 0 16px;
+}
+
+.header__button {
+  margin-right: 24px;
+}
+
+.header__changer {
+  @include basic-area;
+  @include flex;
+  height: 32px;
+  width: 32px;
+  background-color: $changer-color;
+  border: none;
+  border-radius: 50%;
+}
