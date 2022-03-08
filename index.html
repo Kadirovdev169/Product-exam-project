@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,42 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <header>header</header>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="header__title">
+        <img class="header__logo" src="img/product-icon.svg" alt="product project logo" width="40" height="36">
+        Product
+      </h1>
+
+      <nav class="navbar header__navbar">
+        <ul class="nabar__list header__navbar-list">
+          <li class="navbar__list-item header__navbar-item">
+            <a class="navbar__item-link" href="/">Product </a>
+          </li>
+          <li class="navbar__list-item header__navbar-item">
+            <a class="navbar__item-link" href="/">Customers</a>
+          </li>
+          <li class="navbar__list-item header__navbar-item">
+            <a class="navbar__item-link" href="/">Pricing</a>
+          </li>
+          <li class="navbar__list-item header__navbar-item">
+            <a class="navbar__item-link" href="/">Resources</a>
+          </li>
+        </ul>
+        <a class="button header__button" href="/">Sign In</a>
+        <a class="button button__green header__button" href="/">Sign Up</a>
+        <button>
+          <img class="header__button-img" src="" alt="">
+        </button>
+      </nav>
+    </div>
+  </header>
   <main>main</main>
   <footer>footer</footer>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

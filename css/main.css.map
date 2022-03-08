@@ -9,7 +9,8 @@
         "../scss/_fonts.scss",
         "../scss/_general.scss",
         "../scss/blocks/_blocks.scss",
-        "../scss/blocks/_container.scss"
+        "../scss/blocks/_container.scss",
+        "../scss/blocks/_header.scss"
     ],
     "names": [],
     "file": "main.css"
