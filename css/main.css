@@ -546,45 +546,45 @@ a {
 
 @-webkit-keyframes header-opening {
   0% {
-    -webkit-transform: translateX(-100%) scale(0);
-            transform: translateX(-100%) scale(0);
+    -webkit-transform: translateX(100%) scale(0) rotate(180deg);
+            transform: translateX(100%) scale(0) rotate(180deg);
   }
   100% {
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1) rotate(0deg);
+            transform: translateX(0) scale(1) rotate(0deg);
   }
 }
 
 @keyframes header-opening {
   0% {
-    -webkit-transform: translateX(-100%) scale(0);
-            transform: translateX(-100%) scale(0);
+    -webkit-transform: translateX(100%) scale(0) rotate(180deg);
+            transform: translateX(100%) scale(0) rotate(180deg);
   }
   100% {
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1) rotate(0deg);
+            transform: translateX(0) scale(1) rotate(0deg);
   }
 }
 
 @-webkit-keyframes header-closing {
   0% {
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1) rotate(0deg);
+            transform: translateX(0) scale(1) rotate(0deg);
   }
   100% {
-    -webkit-transform: translateX(-100%) scale(0);
-            transform: translateX(-100%) scale(0);
+    -webkit-transform: translateX(100%) scale(0) rotate(180deg);
+            transform: translateX(100%) scale(0) rotate(180deg);
   }
 }
 
 @keyframes header-closing {
   0% {
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
+    -webkit-transform: translateX(0) scale(1) rotate(0deg);
+            transform: translateX(0) scale(1) rotate(0deg);
   }
   100% {
-    -webkit-transform: translateX(-100%) scale(0);
-            transform: translateX(-100%) scale(0);
+    -webkit-transform: translateX(100%) scale(0) rotate(180deg);
+            transform: translateX(100%) scale(0) rotate(180deg);
   }
 }
 
@@ -609,6 +609,11 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__navbar {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
 }
 
 .header__title-link {
@@ -728,8 +733,6 @@ a {
 @media only screen and (max-width: 860px) {
   .header__navbar {
     display: none;
-    -webkit-transform-origin: right top;
-            transform-origin: right top;
     -webkit-animation: header-opening .5s linear;
             animation: header-opening .5s linear;
   }
