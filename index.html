@@ -13,36 +13,40 @@
   <header class="header">
     <div class="container header__container">
       <h1 class="header__title">
-        <a href="/">
+        <a class="header__title-link" href="/">
           <img class="header__logo" src="img/product-icon.svg" alt="product project logo" width="40" height="36">
+          Product
         </a>
-        Product
       </h1>
 
       <nav class="navbar header__navbar">
         <ul class="navbar__list header__navbar-list">
           <li class="navbar__list-item header__navbar-item">
-            <a class="navbar__item-link" href="/">Product </a>
+            <a class="navbar__item-link header__item-link" href="/">Product </a>
           </li>
           <li class="navbar__list-item header__navbar-item">
-            <a class="navbar__item-link" href="/">Customers</a>
+            <a class="navbar__item-link header__item-link" href="/">Customers</a>
           </li>
           <li class="navbar__list-item header__navbar-item">
-            <a class="navbar__item-link" href="/">Pricing</a>
+            <a class="navbar__item-link header__item-link" href="/">Pricing</a>
           </li>
           <li class="navbar__list-item header__navbar-item">
-            <a class="navbar__item-link" href="/">Resources</a>
+            <a class="navbar__item-link header__item-link" href="/">Resources</a>
           </li>
         </ul>
-        <a class="button button__white header__button" href="/">Sign In</a>
-        <a class="button button__green header__button" href="/">Sign Up</a>
+        <a class="button button__white header__button header__login" href="/">Sign In</a>
+        <a class="button button__green header__button header__signup" href="/">Sign Up</a>
         <button class="header__changer">
           <img class="header__button-img" src="img/theme-changer.svg" alt="header navbar changer" width="20" height="20">
         </button>
       </nav>
+
+      <button class="header__burger">
+        <span class="header__burger-inner"></span>
+      </button>
     </div>
   </header>
-  <main>main</main>
+  <main></main>
   <footer>footer</footer>
 
   <script src="js/main.js"></script>

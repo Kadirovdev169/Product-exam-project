@@ -1,0 +1,17 @@
+.black-display {
+  & .header {
+    background-color: $dark-primary;
+  }
+
+  & .header__title-link {
+    color: #ffffffff;
+  }
+
+  & .header__item-link {
+    color: #ffffffff;
+  }
+
+  & .header__button {
+    color: #ffffffff;
+  }
+}
