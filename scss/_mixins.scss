@@ -1,6 +1,5 @@
 @mixin reset-list {
-  margin: 0;
-  padding: 0;
+  @include basic-area;
   list-style: none;
 }
 

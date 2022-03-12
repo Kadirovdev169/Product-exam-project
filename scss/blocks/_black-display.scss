@@ -14,4 +14,10 @@
   & .header__button {
     color: #ffffffff;
   }
+
+  & .header__burger::before,
+  & .header__burger::after,
+  & .header__burger-inner {
+    background-color: #ffffffff;
+  }
 }
