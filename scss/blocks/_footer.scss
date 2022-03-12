@@ -11,12 +11,17 @@
     grid-template-rows: 29px 40px;
     grid-gap: 24px 16px;
     grid-template-areas: "logo logo logo"
-    "link link link";
+      "link link link";
   }
 
 
   .footer__logo {
     grid-area: logo;
+    @include basic-img;
+    width: 162px;
+    height: 29px;
+    background-image: url(../../img/product-logo.svg);
+    background-size: contain;
   }
 
   .footer__link {
@@ -24,6 +29,11 @@
     padding: 10px;
     background-color: $white-blue;
     border-radius: 50%;
+    transition: .5s linear all;
+
+    &:hover {
+      box-shadow: 0 0 10px gray;
+    }
   }
 
   .footer__cart {
@@ -52,15 +62,16 @@
 
   .footer__label {
     @include font($poppins, 20px, 500, 30px);
+    color: $dark;
   }
 
   .footer__label-input {
-    width: 325px;
+    max-width: 325px;
     height: 48px;
     margin: 34px 0 21px;
     border-radius: 4px;
     border: 1px solid #BCD0E5;
-    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25)); 
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
   }
 
   .footer__button {
@@ -74,7 +85,49 @@
     padding-top: 16px;
     text-align: center;
     grid-column: 1 / 4;
-    color: $black;
+    color: $dark;
   }
 
-  
+  @media only screen and (max-width: $tablet) {
+    .footer__container {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: $mobile) {
+    .footer__container {
+      @include flex;
+      flex-direction: column;
+      row-gap: 32px;
+      ;
+    }
+
+    .footer__cart {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__nav {
+      margin-bottom: 32px;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer__form {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer__label-input {
+      @include basic-area;
+      max-width: 325px;
+      margin: 34px 0 21px;
+    }
+
+    .footer__slogan {
+      padding: 0 0 45px;
+    }
+  }
