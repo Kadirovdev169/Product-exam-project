@@ -6,6 +6,7 @@
 
 body {
   @include basic-area;
+  @include font($poppins, 16px, 400, 28px);
   margin-top: 80px;
 }
 
