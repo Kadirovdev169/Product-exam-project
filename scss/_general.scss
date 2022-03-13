@@ -6,14 +6,7 @@
 
 body {
   @include basic-area;
-  @include flex;
   margin-top: 80px;
-  height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex-grow: 1;
 }
 
 h1,
@@ -34,14 +27,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
