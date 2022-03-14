@@ -1,0 +1,143 @@
+.product-specifically {
+    padding-bottom: 90px;
+/*     padding-top: 114px;
+ */    background-image: url('../../img/product-specifically-bg.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    margin-top: 114px;
+}
+
+.product-specifically__title {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 532px;
+    height: 96px;
+    font-family: $poppins;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    margin-left: 250px;
+}
+
+.product-specifically__list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-specifically__item {
+    margin-top: 48px;
+}
+
+.product-specifically__item--first {
+    position: relative;
+
+    &::before {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-color: $green;
+        border-radius: 19px;
+        background-image: url('../../img/point-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        content: '';
+    }
+}
+
+.product-specifically__item--design {
+    position: relative;
+
+    &::before {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-color: #4D8DFF;
+        border-radius: 19px;
+        background-image: url('../../img/regular-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        content: '';
+    }
+}
+
+.product-specifically__item--tests {
+    position: relative;
+
+    &::before {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-color: #740A76;
+        border-radius: 19px;
+        background-image: url('../../img/heart-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        content: '';
+    }
+}
+
+.product-specifically__item--five {
+    position: relative;
+
+    &::before {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background-color: #F03E3D;
+        border-radius: 19px;
+        background-image: url('../../img/hourglass.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        content: '';
+    }
+}
+
+.product-specifically__titule {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    width: fit-content;
+    height: 33px;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.product-specifically__discription {
+    margin: 0px;
+    margin-top: 13px;
+    width: 240px;
+    height: fit-content;
+    font-family: $poppins;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.product-specifically__link {
+    margin-left: 450px;
+    margin-top: 34px;
+    padding: 14px 31px;
+    text-decoration: none;
+    background-color: $green;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: $poppins;
+    font-weight: 700;
+    border: 1px solid #000;
+    
+    &:hover {
+        background-color: transparent;
+        color: $green;
+        transition: 0.3s ease-out;
+    }
+}
