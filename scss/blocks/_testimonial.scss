@@ -77,6 +77,10 @@
 }
 
 @media only screen and (max-width: $mobile) {
+  .testimonial__container {
+    padding-top: 0;
+  }
+  
   .testimonial__list {
     flex-direction: column;
     justify-content: flex-start;

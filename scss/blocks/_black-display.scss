@@ -23,6 +23,24 @@
     background-color: #ffffffff;
   }
 
+  & .pricing__title {
+    color: rgb(3, 1, 1);
+  }
+
+  & .pricing__description {
+    color: #ffffffff;
+  }
+
+  & .pricing__list-item {
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    &:nth-child(even) {
+      color: #ffffffff;
+    }
+  }
+
   & .testimonial__title {
     color: #ffffffff;
   }
