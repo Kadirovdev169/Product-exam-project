@@ -23,6 +23,24 @@
     background-color: #ffffffff;
   }
 
+  & .pricing__title {
+    color: #ffffffff;
+  }
+
+  & .pricing__description {
+    color: #ffffffff;
+  }
+
+  & .pricing__list-item {
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    &:nth-child(even) {
+      color: #ffffffff;
+    }
+  }
+
   & .footer__logo {
     background-image: url(../../img/dark-product-logo.svg);
   }
