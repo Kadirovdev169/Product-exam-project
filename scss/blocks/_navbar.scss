@@ -21,7 +21,6 @@
 }
 
 .navbar__item-link {
-  @include font($poppins, 16px, 500, 28px);
   color: $accent-color;
   transition: .3s ease all;
 
