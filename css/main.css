@@ -834,6 +834,105 @@ a {
   color: #ffffffff;
 }
 
+.intro-product {
+  padding-top: 174px;
+  padding-bottom: 219px;
+}
+
+.intro-product__title {
+  margin: 0px;
+  padding: 0px;
+  width: 518px;
+  height: 120px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.intro-product__discription {
+  width: 458px;
+  height: 95px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 18px;
+  margin-bottom: 45px;
+}
+
+.intro-product__link {
+  text-decoration: none;
+  padding: 13px 39px 12px;
+  background-color: #02897A;
+  color: #fff;
+  margin-right: 12px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.intro-product__link:hover {
+  background-color: transparent;
+  color: #02897A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro-product__video {
+  /*     width: fit-content;
+ */
+  height: 24px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #02897A;
+  text-decoration: underline;
+  padding-left: 9px;
+  border-radius: 4px;
+}
+
+.intro-product__video:hover {
+  background-color: #02897A;
+  color: #fff;
+  padding: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro-product__span {
+  position: relative;
+}
+
+.intro-product__span::before {
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+  background-image: url("../../img/play-btn.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.intro-product__content {
+  position: relative;
+}
+
+.intro-product__content::before {
+  position: absolute;
+  width: 600px;
+  height: 556px;
+  display: inline-block;
+  background-image: url("../../img/intro-bg.svg");
+  top: -125px;
+  left: calc((50% * 2) / 2);
+  content: '';
+}
+
 .footer__container {
   display: -ms-grid;
   display: grid;
@@ -852,7 +951,7 @@ a {
   -ms-grid-rows: 29px 40px;
       grid-template-rows: 29px 40px;
   grid-gap: 24px 16px;
-      grid-template-areas: "logo logo logo" "link link link";
+      grid-template-areas: "logo logo logo" "link link link";
 }
 
 .footer__logo {
