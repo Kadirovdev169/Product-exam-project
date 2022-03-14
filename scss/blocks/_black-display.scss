@@ -23,17 +23,8 @@
     background-color: #ffffffff;
   }
 
-  & .strategies__list-item {
-    background-color: #ffffffff;
-  }
-
-  & .strategies__title,
-  & .strategies__description {
-    color: #ffffffff;
-  }
-
   & .pricing__title {
-    color: rgb(3, 1, 1);
+    color: #ffffffff;
   }
 
   & .pricing__description {
@@ -48,6 +39,15 @@
     &:nth-child(even) {
       color: #ffffffff;
     }
+  }
+
+  & .strategies__list-item {
+    background-color: #ffffffff;
+  }
+
+  & .strategies__title,
+  & .strategies__description {
+    color: #ffffffff;
   }
 
   & .testimonial__title {

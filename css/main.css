@@ -520,17 +520,8 @@ a {
   background-color: #ffffffff;
 }
 
-.black-display .strategies__list-item {
-  background-color: #ffffffff;
-}
-
-.black-display .strategies__title,
-.black-display .strategies__description {
-  color: #ffffffff;
-}
-
 .black-display .pricing__title {
-  color: #030101;
+  color: #ffffffff;
 }
 
 .black-display .pricing__description {
@@ -542,6 +533,15 @@ a {
 }
 
 .black-display .pricing__list-item:nth-child(even) {
+  color: #ffffffff;
+}
+
+.black-display .strategies__list-item {
+  background-color: #ffffffff;
+}
+
+.black-display .strategies__title,
+.black-display .strategies__description {
   color: #ffffffff;
 }
 
