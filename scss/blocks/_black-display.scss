@@ -23,6 +23,15 @@
     background-color: #ffffffff;
   }
 
+  & .strategies__list-item {
+    background-color: #ffffffff;
+  }
+
+  & .strategies__title,
+  & .strategies__description {
+    color: #ffffffff;
+  }
+
   & .footer__logo {
     background-image: url(../../img/dark-product-logo.svg);
   }
