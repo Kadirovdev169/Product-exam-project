@@ -1050,6 +1050,7 @@ a {
     max-width: 348px;
   }
   .strategies__list-item {
+    margin-right: 0;
     border: none;
   }
   .strategies__item-content {
