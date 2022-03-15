@@ -5,6 +5,10 @@
     background-color: $dark-primary;
   }
 
+  & .management-site {
+    background-color: $dark-primary;
+  }
+
   & .header__logo-link {
     background-image: url(../../img/dark-product-logo.svg);
   }
@@ -59,6 +63,37 @@
     color: #ffffffff;
   }
   .product-specifically__discription {
+    color: #ffffffff;
+  }
+
+  .management-site__span {
+    color: #ffffffff;
+  }
+
+  .management-site__title {
+    color: #ffffffff;
+  }
+  .management-site__accessory {
+    color: #ffffffff;
+  }
+
+  .management-site__pharagraph {
+    color: #ffffffff;
+  }
+
+  .management-site__alterationists {
+    color: #ffffffff;
+  }
+
+  .management-site__discrip {
+    color: #ffffffff;
+  }
+
+  .management-site__text {
+    color: #ffffffff;
+  }
+
+  .management-site__station  {
     color: #ffffffff;
   }
 }
