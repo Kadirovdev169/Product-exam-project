@@ -157,6 +157,7 @@
             text-decoration: underline;
             padding: 0px;
             border-radius: 4px;
+            display: inline-block;
         
             &:hover {
                 background-color: $green;
@@ -235,6 +236,10 @@
         content: '';
         }
     }  */
+
+    .intro-product {
+        padding: 250px 0px 116px;
+    }
 
     .intro-product__title {
         margin: 0px;
