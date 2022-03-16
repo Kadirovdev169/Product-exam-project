@@ -4,9 +4,18 @@
   color: $dark;
 }
 
+.pricing__container--price {
+  padding-top: 32px;
+  padding-bottom: 150px;
+}
+
 .pricing__title {
   @include basic-area;
   @include font($poppins, 34px, 700, 51px);
+}
+
+.pricing__title--price {
+  @include font($poppins, 40px, 700, 60px);
 }
 
 .pricing__description {
@@ -128,6 +137,10 @@
 }
 
 @media only screen and (max-width: $tablet) {
+  .pricing__container--price {
+    padding-top: 30px;
+  }
+
   .pricing__list {
     max-width: 676px;
     margin: 0 auto;
@@ -159,6 +172,14 @@
 @media only screen and (max-width: $mobile) {
   .pricing__container {
     padding: 100px 20px;
+  }
+
+  .pricing__container--price {
+    padding-top: 30px;
+  }
+
+  .pricing__title--price {
+    @include font($poppins, 36px, 700, 54px);
   }
 
   .pricing__list {
