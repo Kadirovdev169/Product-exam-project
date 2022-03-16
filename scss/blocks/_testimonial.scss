@@ -51,16 +51,16 @@
   justify-content: flex-start;
 }
 
-.testimonial__user-info {
+.testimonial__user-infos {
   margin-left: 14px;
 }
 
-.testimonial__user-info--name {
+.testimonial__user-info {
   @include basic-area;
   color: $green;
 }
 
-.testimonial__user-info--work {
+.testimonial__user-info-work {
   @include basic-area;
   @include font($poppins, 14px, 500, 24px);
   letter-spacing: .2px;
