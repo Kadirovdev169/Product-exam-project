@@ -581,6 +581,10 @@ a {
   color: #ffffffff;
 }
 
+.black-display .enterprise {
+  background: #22343D;
+}
+
 .black-display .enterprise__title {
   color: #fff;
 }
@@ -1564,7 +1568,7 @@ a {
   -ms-grid-rows: 29px 40px;
       grid-template-rows: 29px 40px;
   grid-gap: 24px 16px;
-      grid-template-areas: "logo logo logo" "link link link";
+      grid-template-areas: "logo logo logo" "link link link";
 }
 
 .footer__logo {
@@ -1756,12 +1760,15 @@ a {
   line-height: 36px;
 }
 
+.enterprise {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(rgba(247, 247, 247, 0)));
+  background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
+}
+
 .enterprise__container {
   padding-top: 53px;
   padding-bottom: 51px;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(rgba(247, 247, 247, 0)));
-  background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
 }
 
 .enterprise__title {
