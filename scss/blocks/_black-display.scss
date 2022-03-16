@@ -27,6 +27,10 @@
     color: #ffffffff;
   }
 
+  & .pricing-heading__title {
+    color: #fff;
+  }
+
   & .pricing__description {
     color: #ffffffff;
   }
@@ -80,5 +84,17 @@
 
   .footer__slogan {
     color: #ffffffff;
+  }
+
+  .enterprise__title {
+    color: #fff;
+  }
+
+  .enterprise__text1 {
+    color: #fff;
+  }
+
+  .enterprise__text2 {
+    color: #fff;
   }
 }
