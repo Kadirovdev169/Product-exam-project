@@ -472,13 +472,13 @@ a {
           box-shadow: 0px 0px 10px gray;
 }
 
-.button__white {
+.button--white {
   color: #173A56;
   background-color: transparent;
   border-color: #BCD0E5;
 }
 
-.button__green {
+.button--green {
   color: #ffffff;
   background-color: #02897A;
 }
@@ -1424,17 +1424,17 @@ a {
           justify-content: flex-start;
 }
 
-.testimonial__user-info {
+.testimonial__user-infos {
   margin-left: 14px;
 }
 
-.testimonial__user-info--name {
+.testimonial__user-info {
   margin: 0;
   padding: 0;
   color: #02897A;
 }
 
-.testimonial__user-info--work {
+.testimonial__user-info-work {
   margin: 0;
   padding: 0;
   font-family: "Poppins", Arial, sans-serif;
@@ -1564,7 +1564,7 @@ a {
   -ms-grid-rows: 29px 40px;
       grid-template-rows: 29px 40px;
   grid-gap: 24px 16px;
-      grid-template-areas: "logo logo logo" "link link link";
+      grid-template-areas: "logo logo logo" "link link link";
 }
 
 .footer__logo {
