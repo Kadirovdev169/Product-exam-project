@@ -111,7 +111,7 @@
     text-decoration: none;
     color: #fff;
     background-color: $green;
-    border: 1px solid $green;
+    border: 1px solid transparent;
     border-radius: 4px;
     font-family: $poppins;
     font-weight: 700;
@@ -130,79 +130,87 @@
 }
 
 @media only screen and (max-width: $tablet) {
+
     .container {
-        width: $mobile;
+        max-width: $tablet;
+        padding: 0px 40px;
     }
 
     .quick {
         margin: 0px;
-        padding: 0px;
+        padding: 53px 33px;
+        text-align: center;
         background-image: url('../../img/quick-bg.svg');
         background-position: center top;
         background-repeat: no-repeat;
-        padding: 53px 0px;
     }
 
     .quick__title {
         margin: 0px;
-        width: fit-content;
-        height: 42px;
+        width: 100%;
+        text-align: center;
+        height: 48px;
         font-family: $poppins;
         font-weight: 700;
-        font-size: 28px;
-        line-height: 39px;
-        text-align: center;
-        margin-left: 340px;
+        font-size: 32px;
+        line-height: 48px;
+        margin-right: auto;
     }
 
     .quick__discrip {
-        margin: 13px 260px 29px;
-        width: 487px;
-        height: 48px;
+        margin: 0px;
+        margin-top: 16px;
+        width: 100%;
         text-align: center;
+        height: 78px;
         font-family: $poppins;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 26px;
     }
 
     .quick__content {
-        margin-top: 28px;
-        margin-bottom: 60px;
-        display: flex;
+        margin-top: 39px;
+        margin-bottom: 32px;
+        display: block;
         justify-content: space-between;
-    }
-
-    .quick__content {
-        margin-top: 28px;
-        margin-bottom: 60px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .quick__list {
-        @include reset-list;
-        display: flex;
-    }
-
-    .quick__item {
-        margin-top: 10px;
-        &:nth-child(2n) {
-            margin-top: 15px;
-            margin-right: 5px
-        }
-    }
+    } 
 
     .quick__roster {
         @include reset-list;
         display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+        width: fit-content;
     }
 
     .quick__point {
-        margin: 0px;
-        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
         &:nth-child(2n) {
-            margin-top: 15px;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: auto;
+        }
+    }
+
+    .quick__keep {
+        align-items: center;
+    }
+
+    .quick__item {
+        align-items: center;
+    }
+
+    .quick__link {
+        text-align: center;
+    }
+
+    .quick__item {
+        margin: 0px;
+        &:nth-child(2n) {
+            margin: 0px;
         }
     }
 }
@@ -224,8 +232,8 @@
 
     .quick__title {
         margin: 0px;
-        margin-left: -130px;
-        width: 348px;
+        text-align: center;
+        width: 100%;
         height: 48px;
         font-family: $poppins;
         font-weight: 700;
@@ -236,8 +244,7 @@
 
     .quick__discrip {
         margin-top: 16px;
-        margin-left: 120px;
-        width: 338px;
+        width: 100%;
         height: 78px;
         text-align: center;
         font-family: $poppins;
@@ -273,7 +280,8 @@
     }
 
     .quick__link {
-        margin-left: -180px;
+        margin-left: 0px;
+        width: fit-content;
     }
     
 }
