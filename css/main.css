@@ -597,6 +597,12 @@ a {
   color: #fff;
 }
 
+.black-display .effects__title,
+.black-display .effects__item-title,
+.black-display .effects__item-text {
+  color: #fff;
+}
+
 .navbar {
   margin: 0;
   padding: 0;
