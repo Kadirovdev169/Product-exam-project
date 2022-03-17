@@ -26,6 +26,7 @@
 }
 
 .intro-product__link {
+    width: fit-content;
     text-decoration: none;
     padding: 13px 39px 12px;
     background-color: $green;
@@ -35,7 +36,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    border: 1px solid #000;
+    display: inline-block;
+    border: 1px solid transparent;
     border-radius: 4px;
 
     &:hover {
@@ -46,8 +48,9 @@
 }
 
 .intro-product__video {
-/*     width: fit-content;
- */    height: 24px;
+    /*     width: fit-content;
+ */
+    height: 24px;
     font-family: $poppins;
     font-weight: 600;
     font-size: 16px;
@@ -60,167 +63,135 @@
     &:hover {
         background-color: $green;
         color: #fff;
-        padding: 14px ;
+        padding: 14px;
         transition: 0.3s;
     }
 }
 
 .intro-product__span {
-
     position: relative;
 
     &::before {
         width: 20px;
         height: 17px;
         display: inline-block;
-        background-image: url('../../img/play-btn.svg');
+        background-image: url("../../img/play-btn.svg");
         background-position: center center;
         background-repeat: no-repeat;
-        content: '';
+        content: "";
     }
 }
 
 .intro-product__content {
-
     position: relative;
-
 
     &::before {
         position: absolute;
         width: 600px;
         height: 556px;
         display: inline-block;
-        background-image: url('../../img/intro-bg.svg');
+        background-image: url("../../img/intro-bg.svg");
         top: -125px;
         left: calc((50% * 2) / 2);
-        content: '';
+        content: "";
     }
-
 }
 
 @media only screen and (max-width: $tablet) {
     .container {
-        max-width: $mobile
+        max-width: $tablet;
+        padding: 0px 40px;
     }
-    .intro-product__content {
 
-        &::before {
-        position: absolute;
-        width: 338px;
-        height: 310px;
-        display: block;
-        background-image: url('../../img/mobile-bg.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        top: -230px;
-        left: auto;
-        z-index: -1;
-        content: '';
-        }
-    } 
-    /* .intro-product__content {
+    .intro-product__content {
+        padding-top: 200px;
         position: relative;
 
         &::before {
-        position: absolute;
-        width: 100%;
-        height: 556px;
-        display: block;
-        background-image: url('../../img/intro-bg.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        top: -125px;
-        left: calc((50% * 2) / 2);
-        content: '';
+            position: absolute;
+            width: 338px;
+            height: 311px;
+            display: inline-block;
+            background-image: url("../../img/mobile-bg.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            top: -150px;
+            left: 145px;
+            content: "";
         }
-    } */
+    }
 
     .intro-product__title {
-        margin: 0px;
-        padding: 0px;
-        width: 418px;
-        height: 90px;
+        width: 100%;
+        text-align: center;
+        height: 120px;
         font-family: $poppins;
+        font-size: 36px;
         font-weight: 700;
-        font-size: 32px;
-        line-height: 42px;
+        line-height: 56px;
     }
 
-
-    .intro-product__video {
-            height: 24px;
-            font-family: $poppins;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 18px;
-            color: $green;
-            text-decoration: underline;
-            padding: 0px;
-            border-radius: 4px;
-            display: inline-block;
-        
-            &:hover {
-                background-color: $green;
-                color: #fff;
-                padding: 14px ;
-                transition: 0.3s;
-        }
+    .intro-product__discription {
+        margin: 0px;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        font-family: $poppins;
+        font-weight: 400;
     }
-
 
     .intro-product__link {
+        text-align: center;
         width: fit-content;
         text-decoration: none;
         padding: 13px 39px 12px;
         background-color: $green;
         color: #fff;
-        margin-right: 9px;
+        margin-right: 12px;
         font-family: $poppins;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
-        border: 1px solid #000;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        border: 1px solid transparent;
         border-radius: 4px;
-        display: inline-block;
     
         &:hover {
             background-color: transparent;
             color: $green;
             transition: 0.3s;
         }
-    } 
+    }
 
-    .intro-product__discription {
-        width: 412px;
-        height: 84px;
+    .intro-product__video {
+        width: 100%;
+        text-align: center;
+        height: 24px;
         font-family: $poppins;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        margin-top: 14px;
-        margin-bottom: 38px;
-    } 
-
-    .intro-product__title {
-        margin: 0px;
-        padding: 0px;
-        width: 452px;
-        height: 88px;
-        font-family: $poppins;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 49px;
+        color: $green;
+        text-decoration: underline;
+        padding-left: 9px;
+        border-radius: 4px;
+    
+        &:hover {
+            background-color: $green;
+            color: #fff;
+            padding: 14px;
+            transition: 0.3s;
+        }
     }
 }
 
-
 @media only screen and (max-width: $tablet) {
-        .container {
-        max-width: $mobile;
-        padding: 0px 37px;
+        .intro-product {
+            margin-top: 260px;
+            margin-left: 187px;
+            padding: 37px 0px;
     }
 
-   /*  .intro-product__content {
+    .intro-product__content {
 
         &::before {
         position: absolute;
@@ -235,11 +206,7 @@
         z-index: -1;
         content: '';
         }
-    }  */
-
-    .intro-product {
-        padding: 250px 0px 116px;
-    }
+    } 
 
     .intro-product__title {
         margin: 0px;
@@ -275,6 +242,7 @@
         line-height: 24px;
         border: 1px solid #000;
         border-radius: 4px;
+        display: inline-block;
     
         &:hover {
             background-color: transparent;
@@ -284,7 +252,8 @@
     }
 
     .intro-product__video {
-        width: fit-content;
+        width: 100%;
+        text-align: center;
         height: 24px;
         font-weight: 600;
         font-size: 16px;
@@ -302,4 +271,4 @@
             font-family: $poppins;
             }
         }
-}
+} 

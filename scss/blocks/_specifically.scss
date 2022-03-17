@@ -125,6 +125,7 @@
     margin-left: 450px;
     margin-top: 34px;
     padding: 14px 31px;
+    width: fit-content;
     text-decoration: none;
     background-color: $green;
     color: #fff;
@@ -142,9 +143,10 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: $tablet) {
     .container {
         max-width: $tablet;
+        padding: 0px 40px;
     }
 
     .product-specifically {
@@ -153,26 +155,27 @@
         background-position: center bottom;
         background-repeat: no-repeat;
         max-width: 100%;
-        margin-top: 114px;
+        margin: 0px;
     }
+
+    
 
     .product-specifically__title {
         text-align: center;
+        width: 100%;
         margin: 0px;
         padding: 0px;
-        width: 452px;
         height: 86px;
         font-family: $poppins;
         font-weight: 700;
         font-size: 26px;
         line-height: 40px;
-        margin-left: 210px;
     }
 
     .product-specifically__list {
         @include reset-list;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -254,17 +257,18 @@
     }
 
     .product-specifically__link {
-        margin-left: 360px;
+        margin: 0px;
         margin-top: 24px;
+        width: fit-content;
+        text-align: center;
         padding: 12px 29px;
         text-decoration: none;
         background-color: $green;
         color: #fff;
         border-radius: 4px;
-        display: inline-block;
         font-family: $poppins;
         font-weight: 700;
-        border: 1px solid #000;
+        border: 1px solid transparent;
         
         &:hover {
             background-color: transparent;
@@ -281,7 +285,7 @@
 
 
 
-@media only screen and (max-width: $tablet) {
+@media only screen and (max-width: $mobile) {
     .container {
         max-width: $mobile;
         padding: 0px 40px;
@@ -289,8 +293,8 @@
 
     .product-specifically {
         padding-bottom: 90px;
-    /*     padding-top: 114px;
-     */    background-image: url('../../img/specifically-bg.svg');
+        padding-top: 114px;
+        background-image: url('../../img/specifically-bg.svg');
         background-position: center bottom;
         background-repeat: no-repeat;
         max-width: 100%;
@@ -425,6 +429,7 @@
         margin-left: 50px;
         margin-top: 34px;
         padding: 14px 31px;
+        width: fit-content;
         text-decoration: none;
         background-color: $green;
         color: #fff;
@@ -441,4 +446,4 @@
             transition: 0.3s ease-out;
         }
     }
-}
+} 
