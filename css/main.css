@@ -3439,6 +3439,91 @@ a {
 }
 
 .effects__container {
-  padding: 10px;
+  padding-top: 150px;
+}
+
+.effects__title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 51px;
+  color: #22343D;
+  margin-bottom: 56px;
+  width: 100%;
+  text-align: center;
+}
+
+.effects__img {
+  padding-top: 24px;
+}
+
+.effects__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.effects__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 543px;
+}
+
+.effects__item {
+  margin-bottom: 32px;
+}
+
+.effects__item:last-child {
+  margin-bottom: 0;
+}
+
+.effects__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 23px;
+}
+
+.effects__item-content::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.effects__item--enter::before {
+  background-image: url("../../img/enter.png");
+}
+
+.effects__item--account::before {
+  background-image: url("../../img/account.png");
+}
+
+.effects__item--univer::before {
+  background-image: url("../../img/univer.png");
+}
+
+.effects__item-title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #22343D;
+}
+
+.effects__item-text {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #22343D;
 }
 /*# sourceMappingURL=main.css.map */
