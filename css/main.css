@@ -842,6 +842,14 @@ a {
   color: #ffffffff;
 }
 
+.black-display .enterprise {
+  background: #22343D;
+}
+
+.black-display .enterprise__title {
+  color: #fff;
+}
+
 .black-display .intro-product__discription {
   color: #ffffffff;
 }
