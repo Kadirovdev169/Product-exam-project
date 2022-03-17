@@ -21,7 +21,8 @@
         "../scss/blocks/_cta.scss",
         "../scss/blocks/_footer.scss",
         "../scss/blocks/_pricing-heading.scss",
-        "../scss/blocks/_enterprise.scss"
+        "../scss/blocks/_enterprise.scss",
+        "../scss/blocks/_effects.scss"
     ],
     "names": [],
     "file": "main.css"
