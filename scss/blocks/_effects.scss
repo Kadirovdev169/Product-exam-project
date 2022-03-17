@@ -67,3 +67,59 @@
   @include font ($poppins, 16px, 400, 28px);
   color: $dark;
 }
+
+@media screen and (max-width: $tablet) {
+  .effects__content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .effects__img {
+    padding-top: 0;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .effects__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .effects__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .effects__title {
+    @include font ($poppins, 32px, 700, 48px);
+    margin-bottom: 33px;
+    width: 342px;
+  }
+
+  .effects__img {
+    width: 352px;
+    height: 288px;
+    margin-bottom: 32px;
+  }
+
+  .effects__list {
+    width: 339px;
+  }
+
+  .effects__item-content::before {
+    width: 53px;
+  }
+
+  .effects__item {
+    margin-bottom: 24px;
+  }
+
+  .effects__item-content {
+    margin-bottom: 16px;
+  }
+}
